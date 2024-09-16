@@ -79,9 +79,9 @@ const DrawingList = () => {
           ? data.map((drawing, index) => {
               return (
                 <Card
-                  category={drawing.category}
-                  _id={drawing._id}
-                  image={drawing.imageUrl}
+                  category={drawing?.category}
+                  _id={drawing?._id}
+                  image={drawing?.imageUrl}
                   fetchdrawData={fetchdrawData}
                   key={index}
                 />
